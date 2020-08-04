@@ -102,12 +102,12 @@ a:active {
 <h1> <u>Moon Soon </h1></u>
 <hr>
 <p>
-Welcome to the Moon Soon. We are one of the very few organisations that provide you with Identity to live on Moon. As we know that the day we will leave earth and start living on planet Mars and Moon is not far, So we 
+Welcome to the Moon Soon. We are one of those very few organisations that provide you opportunity to explore moon for real. As we know that the day when some of us will leave earth and start living on other celestial bodies like Mars and Moon is not far, So we 
 provide you with the Identity card that you can use to prove your citizenship on Moon! If you are a curious explorer then Sign Up now!!!</p>
 <hr>
 <button class="button"><a href="signup.php">Sign Up</button>
 <button class="button1 button"><a href="login.php">Log In</a></button>
-<button class="button2 button"><a href="know.php">Know More</a></button>
+<button class="button2 button"><a href="know_more.html">Know More</a></button>
 
 </body>
 </html>
