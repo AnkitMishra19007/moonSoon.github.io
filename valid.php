@@ -1,3 +1,4 @@
+<?php $conn= mysqli_connect("localhost","isro","14159265358979","moon soon"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,6 +74,21 @@ if($c==1 && !empty($_POST["fname"]) && !empty($_POST["E-mail"]) && !empty($_POST
     <a href="index.php">
   <input type="submit" value="Main Page">
   </a>';
+
+  $email= mysqli_real_escape_string($conn,$_POST['E-mail']);
+  $fname= mysqli_real_escape_string($conn,$_POST['fname']);
+  $GovermentId= mysqli_real_escape_string($conn,$_POST['GovermentId']);
+  $password= mysqli_real_escape_string($conn,$_POST['password']);
+
+  $sql= "INSERT INTO curious(names, govtid, email, pasword) VALUES('$fname','$GovermentId','$email','$password')";
+
+  //saving to database and checking
+  if(mysqli_query($conn,$sql)){
+
+  }
+  else{
+    echo '<h1>ERROR</h1>';
+  }
 }
 else{
   echo '<a href="signup.php">
