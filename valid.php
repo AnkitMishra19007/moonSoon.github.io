@@ -81,7 +81,7 @@ if($c==1 && !empty($_POST["fname"]) && !empty($_POST["E-mail"]) && !empty($_POST
     echo '<h2>Form submitted successfully</h2><br>
     <h3>To process on the data and validate it, we may take upto 3 days So please bare with us. We will let you know about the future steps through e-mails.
       We appreciate your curiosity and wish you best of luck for ahead.</h3><br>
-      <a href="index.php">
+      <a href="index.html">
     <input type="submit" value="Main Page">
     </a>';
   }
@@ -90,7 +90,7 @@ if($c==1 && !empty($_POST["fname"]) && !empty($_POST["E-mail"]) && !empty($_POST
   }
 }
 else{
-  echo '<a href="signup.php">
+  echo '<a href="signup.html">
 <input type="submit" value="Fill now">
 </a>';
 }

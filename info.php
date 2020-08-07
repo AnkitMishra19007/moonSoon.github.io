@@ -77,7 +77,7 @@ else{
   echo '<h2> Incorrect Email or Password.<br> Please Log-in properly</h2>';
 }
  ?>
-    <a href="login.php">
+    <a href="login.html">
         <input type="submit" value="Back">
         </a>
 </body>
