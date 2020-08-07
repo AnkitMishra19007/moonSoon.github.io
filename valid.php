@@ -74,6 +74,10 @@ if($c==1 && !empty($_POST["fname"]) && !empty($_POST["E-mail"]) && !empty($_POST
   $GovermentId= mysqli_real_escape_string($conn,$_POST['GovermentId']);
   $password= mysqli_real_escape_string($conn,$_POST['password']);
 
+  $bon= "SELECT email FROM curious where email='$email'";
+  $jovi=mysqli_query($conn,$bon);
+  $life=mysqli_fetch_all($jovi,MYSQLI_ASSOC);
+  if(empty($life)){
   $sql= "INSERT INTO curious(names, govtid, email, pasword) VALUES('$fname','$GovermentId','$email','$password')";
 
   //saving to database and checking
@@ -87,7 +91,13 @@ if($c==1 && !empty($_POST["fname"]) && !empty($_POST["E-mail"]) && !empty($_POST
   }
   else{
     echo '<h1>ERROR</h1>';
-  }
+  }}
+else{
+  echo '<h3>'."Someone already registered with this email. Please try another one!".'</h3>';
+  echo '<a href="signup.html">
+  <input type="submit" value="Back">
+  </a>';
+}
 }
 else{
   echo '<a href="signup.html">
