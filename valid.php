@@ -68,12 +68,6 @@ if(empty($_POST["password"])){
   echo "<h3>Password is required</h3>";
 }
 if($c==1 && !empty($_POST["fname"]) && !empty($_POST["E-mail"]) && !empty($_POST["GovermentId"]) && !empty($_POST["password"])){
-  echo '<h2>Form submitted successfully</h2><br>
-  <h3>To process on the data and validate it, we may take upto 3 days So please bare with us. We will let you know about the future steps through e-mails.
-    We appreciate your curiosity and wish you best of luck for ahead.</h3><br>
-    <a href="index.php">
-  <input type="submit" value="Main Page">
-  </a>';
 
   $email= mysqli_real_escape_string($conn,$_POST['E-mail']);
   $fname= mysqli_real_escape_string($conn,$_POST['fname']);
@@ -84,7 +78,12 @@ if($c==1 && !empty($_POST["fname"]) && !empty($_POST["E-mail"]) && !empty($_POST
 
   //saving to database and checking
   if(mysqli_query($conn,$sql)){
-
+    echo '<h2>Form submitted successfully</h2><br>
+    <h3>To process on the data and validate it, we may take upto 3 days So please bare with us. We will let you know about the future steps through e-mails.
+      We appreciate your curiosity and wish you best of luck for ahead.</h3><br>
+      <a href="index.php">
+    <input type="submit" value="Main Page">
+    </a>';
   }
   else{
     echo '<h1>ERROR</h1>';
@@ -95,9 +94,6 @@ else{
 <input type="submit" value="Fill now">
 </a>';
 }
-
-
-
 ?>
 </body>
 </html>

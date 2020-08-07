@@ -38,7 +38,7 @@
                 font-size: large;
                 padding: 5px 5px;
                 font-family: 'Crete Round';
-            margin: 4% 15%;
+            margin: 2% 15%;
             box-sizing: border-box;
             border-radius: 10%;
             }
@@ -53,16 +53,33 @@
                margin: 70px auto;
                padding: 20px; 
             }
+            a{
+text-decoration: none;
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+a:active {
+  color: white;
+}
         </style>
     </head>
     <body>
         <h2><u>Log In to access your Identity Card</h2></u> 
-        <form action="#" method="POST">
-            <label for="fname">SIMC ID:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="SIMC Number">SIMC Number:</label><br>
-            <input type="password" id="SIMC Number" name="SIMC Number"><br><br> <!--Special Identity for moon citizenship-->
-            <input type="submit" value="Log In">
-          </form>
+        <form action="info.php" method="POST">
+        <label for="E-mail">Email</label><br>
+        <input type="text" id="E-mail" name="E-mail"><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="password"><br><br> <!--Special Identity for moon citizenship-->
+            <a href="info.php"><input type='submit' value='Log In'></a></form>
+            <a href="index.php">
+        <input type="submit" value="Back"></a>
+          
     </body>
 </html>

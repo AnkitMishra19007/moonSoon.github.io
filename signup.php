@@ -50,7 +50,7 @@
             }
             form{
                max-width: 460px;
-               margin: 70px auto;
+               margin: 40px auto;
                padding: 20px; 
             }
         </style>
@@ -68,6 +68,7 @@
             <input type="password" id="password" name="password"><br>
             <input type="submit" value="Sign Up">
           </form>
-    
+          <a href="index.php">
+        <input type="submit" value="Back"></a>
     </body>
 </html>
